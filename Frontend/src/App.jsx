@@ -6,8 +6,7 @@ function App() {
   return (
     <>
       <nav>Navbar</nav>
-      <main>
-        <h1>Home</h1>
+      <main className="font-primary">
         <Outlet />
       </main>
      <footer>footer</footer>
