@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}", // Bao gồm tất cả file trong thư mục src
+    "./public/index.html" // Bao gồm file HTML gốc nếu cần
   ],
   theme: {
     extend: {
