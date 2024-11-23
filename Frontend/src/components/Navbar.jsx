@@ -17,11 +17,11 @@ const navigation = [
 const Nav =()=>{
     const currentUser = true;
     const [isDropdownOpen ,setIsDropdownOpen] =useState(false);
-    console.log(isDropdownOpen);
+  //  console.log(isDropdownOpen);
     
     return (
         <header className="max-w-screen-2xl mx-auto px-4 py-6">
-            <nav className="flex justify-between items-center">
+            <nav className="flex justify-between items-center ml-9 mr-16">
                 {/*Left side */}
                 <div className="flex justify-center md:gap-16 gap-4">
                  <Link to="/">
