@@ -70,7 +70,7 @@ const TopSellers = () => {
             spaceBetween: 50,
           },
         }}
-        modules={[Navigation,Pagination]}
+        modules={[Navigation]}
         className="mySwiper"
       >
         {

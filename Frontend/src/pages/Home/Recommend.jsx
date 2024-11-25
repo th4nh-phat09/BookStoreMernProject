@@ -46,7 +46,8 @@ const Recommend = () => {
             spaceBetween: 50,
           },
         }}
-        modules={[Navigation,Pagination]}
+        modules={[Navigation]}
+//        modules={[Navigation,Pagination]}
         className="mySwiper"
       >
         {
