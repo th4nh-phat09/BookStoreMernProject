@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom"
 import Nav from "./components/Navbar"
-
+import Footer from "./components/Footer"
 
 function App() {
   
@@ -10,7 +10,8 @@ function App() {
       <main className="font-primary">
         <Outlet />
       </main>
-     <footer>footer</footer>
+     <Footer />
+
     </>
   )
 }
