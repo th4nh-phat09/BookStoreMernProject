@@ -16,6 +16,10 @@ const Register = () => {
         console.log(data)
       }
 
+      const handleGoogleSignIn = () => {
+      //  console.log("Google Sign In")
+      }
+
   return (
     <div className='h-[calc(100vh-80px)] flex justify-center items-center '>
     <div className='w-full max-w-sm mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4'>
@@ -49,7 +53,7 @@ const Register = () => {
 
         {/* google sign in */}
         <div className='mt-4'>
-            <button 
+            <button onClick={handleGoogleSignIn}
             className='w-full flex flex-wrap gap-1 items-center justify-center bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none'>
             <FaGoogle  className='mr-2'/>
             Sign in with Google
