@@ -6,6 +6,7 @@ import { PiHeart } from "react-icons/pi";
 import { PiShoppingCart } from "react-icons/pi";
 import { useState } from "react";
 import avatarImg from "../assets/avatar.png"
+import { useSelector } from "react-redux";
 const navigation = [
     { name: "Dashboard", href: "/dashboard" },
     { name: "Orders", href: "/order" },
@@ -18,6 +19,7 @@ const Nav =()=>{
     const currentUser = false;
     const [isDropdownOpen ,setIsDropdownOpen] =useState(false);
   //  console.log(isDropdownOpen);
+    const cartItems = useSelector(state => state.cart.cartItems)
     
     return (
         <header className="max-w-screen-2xl mx-auto px-4 py-6">
@@ -70,7 +72,10 @@ const Nav =()=>{
                     </button>
                     <Link to="/cart" className="bg-primary flex p-1 sm:px-6 px-2 items-center rounded-sm">
                         <PiShoppingCart className="size-6"/>
-                        <span className="text-sm font-semibold sm:ml-1">0</span>
+                          {cartItems.length > 0 ? 
+                            <span className="text-sm font-semibold sm:ml-1">{cartItems.length}</span> 
+                             : <span className="text-sm font-semibold sm:ml-1">0</span>
+                        }
                     </Link>
                 </div>
             </nav> 
